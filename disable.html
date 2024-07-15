@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Title of the document -->
+  <title>MathJax Accessibility Configuration Example</title>  
+  
+  <!-- Include MathJax library for rendering mathematical notations -->
+  <script type="text/javascript" async
+    src="https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.js">
+  </script>
+  
+  <!-- MathJax configuration script -->
+  <script type="text/javascript">
+  MathJax = {
+    tex: {
+      // Define inline math delimiters: $...$ and \(...\)
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+  };
+  </script>
+</head>
+<body>
+  <!-- Header of the document -->
+  <h1>Example with Accessibility Options Disabled</h1>
+  
+  <!-- Paragraph with an inline math expression using $...$ delimiters -->
+  <p>Here is an inline math expression: $E = mc^2$</p>
+  
+  <!-- Paragraph introducing a displayed equation -->
+  <p>And here is a displayed equation:</p>
+  
+  <!-- Displayed equation using $$...$$ delimiters -->
+  $$\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}$$
+</body>
+</html>
